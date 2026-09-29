@@ -1,0 +1,118 @@
+/* === RETRO GAMEZONE STYLE - ESTILO 8-BIT === */
+
+/* Fonte clássica de jogos (pode substituir se HTML for externo) */
+body {
+    font-family: "Courier New", monospace;
+    background: linear-gradient(135deg, #1a0033 0%, #001a33 100%);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Título em estilo neon/piscando */
+.titulo-principal {
+    text-align: center;
+    font-size: 40px;
+    color: #ff00ff;
+    text-shadow: 4px 4px 0 #00ffff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    animation: piscar 1s infinite;
+    margin: 20px 0;
+}
+
+@keyframes piscar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.subtitulo {
+    text-align: center;
+    color: #00ffff;
+    font-size: 20px;
+}
+
+/* Navegação estilo arcade */
+.navegacao {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.navegacao a {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    color: white;
+    padding: 12px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.navegacao a:hover {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+/* Banner com borda brilhante */
+.banner-principal {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: 150px;
+    border: 4px solid #00ff00;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+/* Títulos de seção */
+.titulo-secao {
+    color: #ffff00;
+    border-bottom: 3px dashed #ff00ff;
+    padding-bottom: 10px;
+}
+
+/* Lista de consoles estilo retro */
+.lista-consoles {
+    list-style: square;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+}
+
+.lista-consoles li {
+    margin: 10px 0;
+    color: #00ff00;
+}
+
+/* Tabela estilo arcade */
+.tabela-precos {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+}
+
+.tabela-precos th {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    color: white;
+    padding: 15px;
+}
+
+.tabela-precos td {
+    border: 1px solid #00ff00;
+    padding: 12px;
+}
+
+.preco {
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    color: #aaaaaa;
+    margin-top: 40px;
+    font-size: 14px;
+}
